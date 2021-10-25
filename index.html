@@ -15,13 +15,18 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bold text-uppercase" href="#">Bootstrap 5</a>
+              <!-- offcanvas trigger -->
+              <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+              </button>
+              <!-- offcanvas trigger -->
+              <a class="navbar-brand fw-bold text-uppercase me-auto" href="#">Bootstrap 5</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <form class="d-flex ms-auto">
-                    <div class="input-group">
+                    <div class="input-group my-3 my-lg-0">
                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
                       </div>
@@ -43,6 +48,47 @@
             </div>
         </nav>
         <!-- navbar -->
+
+        <!-- offcanvas -->
+        
+        <div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+              <ul class="navbar-nav">
+                <li><div class="text-muted small fw-bold text-uppercase px-3">Core</div></li>
+                <li>
+                  <a href="#" class="nav-link px-3 active">
+                    <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="my-4"><hr class="dropdown-divider"/></li>
+                <li><div class="text-muted small fw-bold text-uppercase px-3">Interface</div></li>
+                <li>
+                  <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                    <span>Layouts</span>
+                    <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
+                  </a>
+                  <div class="collapse" id="collapseExample">
+                    <div>
+                      <ul class="navbar-nav ps-3">
+                        <li>
+                          <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                            <span>Nested Link</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="my-4"><hr class="dropdown-divider"/></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- offcanvas -->
 
        <script src="./js/bootstrap.bundle.min.js"></script>
        <script src="./js/jquery-3.5.1.js"></script>
